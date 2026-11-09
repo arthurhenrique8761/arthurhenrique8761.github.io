@@ -1,13 +1,16 @@
+@import './colors.css';
+
 /* 1. Estilos Gerais e Elementos Base */
 html {
-    background-color: #242424;
-    color: #ebebeb;
+    background-color: var(--bg-main);
+    color: var(--text-primary);
     font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
     scroll-behavior: smooth;
+    font-size: larger;
 }
 
 main {
-    margin: 80px;
+    margin: 40px;
 }
 
 main ol,
@@ -17,6 +20,7 @@ main ul {
 
 header {
     text-align: center;
+    padding-top: 25px;
 }
 
 /* Links */
@@ -54,9 +58,8 @@ tr:nth-child(even) {
 
 /* 2. Layout Estrutural (Grid e Flexbox) */
 .containerGrid {
-    display: grid;
-    gap: 20px;
-    grid-template-columns: 1fr 1fr;
+    display: block;
+    /* Padrão para Mobile */
 }
 
 nav,
@@ -73,6 +76,9 @@ footer {
     background-color: #393939;
     padding: 10px;
     border-radius: 18px;
+    margin: 0px;
+    align-items: center;
+    flex-direction: column;
 }
 
 #flexNav a {
@@ -203,21 +209,20 @@ footer p {
     border-radius: 5px;
 }
 
-/* 7. Responsividade */
-@media (width < 1200px) {
+/* 7. Query para telas maiores */
+@media (min-width: 1201px) {
     html {
-        font-size: large;
-    }
-
-    main {
-        margin: 40px;
+        font-size: medium;
     }
 
     #flexNav {
-        flex-direction: column;
+        flex-direction: row;
+        align-items: normal;
     }
 
     .containerGrid {
-        display: block;
+        display: grid;
+        gap: 20px;
+        grid-template-columns: 1fr 1fr;
     }
 }
