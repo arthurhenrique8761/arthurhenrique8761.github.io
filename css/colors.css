@@ -1,0 +1,27 @@
+:root {
+    /* Paleta Principal */
+    --bg-main: #242424;
+    --bg-text-area: #2c2c2c;
+    --bg-nav-card: #393939;
+    --bg-projeto-card: #555555;
+
+    /* Tipografia e Links */
+    --text-primary: #ebebeb;
+    --text-footer: #ffffff;
+    --link-primary: #f0f8ff;
+    --link-visited: #747474;
+
+    /* Categorias / Seções */
+    --theme-sobre: #45b245;
+    --theme-projeto: #078f62;
+    --theme-tech: #b9a333;
+    --theme-objetivos: #be3c3c;
+    --theme-hobbies: #215281;
+    --theme-contato: #c36c1a;
+
+    /* Elementos de Tabela e Bordas */
+    --border-default: #9797976f;
+    --table-row-odd: #97979750;
+    --table-row-even: #9797971d;
+    --card-sombra: #07070734;
+}
