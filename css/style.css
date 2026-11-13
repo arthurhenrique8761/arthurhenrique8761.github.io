@@ -6,7 +6,7 @@ html {
     color: var(--text-primary);
     font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
     scroll-behavior: smooth;
-    font-size: larger;
+    font-size: large;
 }
 
 main {
@@ -210,7 +210,7 @@ footer p {
 }
 
 /* 7. Query para telas maiores */
-@media (min-width: 1201px) {
+@media (min-width: 767px) {
     html {
         font-size: medium;
     }
