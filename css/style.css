@@ -7,11 +7,14 @@ html {
     font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
     scroll-behavior: smooth;
     font-size: large;
-    min-width: 450px;
+}
+
+body {
+    padding: auto;
 }
 
 main {
-    margin: 40px;
+    margin: 20px;
 }
 
 main ol,
@@ -22,6 +25,10 @@ main ul {
 header {
     text-align: center;
     padding-top: 25px;
+}
+
+img {
+    height: auto;
 }
 
 /* Links */
@@ -37,6 +44,8 @@ a:visited {
 
 /* Tabela */
 table {
+    overflow-x: auto;
+    max-width: 100%;
     margin: 10px auto auto;
     border-collapse: collapse;
 }
@@ -79,6 +88,7 @@ footer {
     border-radius: 18px;
     margin: 0px;
     align-items: center;
+    /* Mobile-first: flex-direction is column by default, overridden to row in media query for larger screens */
     flex-direction: column;
 }
 
@@ -94,8 +104,7 @@ footer {
 }
 
 #flexImg>* {
-    max-width: 90%;
-
+    max-width: 94%;
 }
 
 .projetos-grid {
@@ -218,14 +227,15 @@ footer p {
 }
 
 /* 7. Query para telas maiores */
-@media (min-width: 767px) {
+@media (min-width: 768px) {
     html {
         font-size: medium;
     }
 
-    #flexNav {
+    nav {
         flex-direction: row;
-        align-items: normal;
+        justify-content: center;
+        gap: 30px;
     }
 
     .containerGrid {
