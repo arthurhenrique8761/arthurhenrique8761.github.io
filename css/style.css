@@ -7,6 +7,7 @@ html {
     font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
     scroll-behavior: smooth;
     font-size: large;
+    min-width: 450px;
 }
 
 main {
@@ -89,6 +90,12 @@ footer {
     display: flex;
     flex-wrap: wrap;
     justify-content: space-around;
+    object-fit: cover;
+}
+
+#flexImg>* {
+    max-width: 90%;
+
 }
 
 .projetos-grid {
@@ -104,6 +111,7 @@ footer {
 
 /* 3. Componentes Reutilizáveis (Cards e Imagens) */
 .card {
+    overflow: auto;
     background-color: #393939;
     padding: 15px;
     margin: 30px 0px;
