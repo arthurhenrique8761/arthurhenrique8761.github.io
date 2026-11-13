@@ -1,9 +1,7 @@
-@import './colors.css';
-
 /* 1. Estilos Gerais e Elementos Base */
 html {
-    background-color: var(--bg-main);
-    color: var(--text-primary);
+    background-color: #242424;
+    color: #ebebeb;
     font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
     scroll-behavior: smooth;
     font-size: large;
@@ -189,12 +187,10 @@ footer {
     display: flex;
     justify-content: space-between;
     padding: 20px;
-    color: #ffffff;
     margin-top: 40px;
 }
 
 footer a {
-    color: #ffffff;
     text-decoration: none;
 }
 
@@ -227,15 +223,21 @@ footer p {
 }
 
 /* 7. Query para telas maiores */
+@media (min-width: 428px) {
+    #flexNav {
+        flex-direction: row;
+        align-items: normal;
+    }
+}
+
 @media (min-width: 768px) {
     html {
         font-size: medium;
     }
 
-    nav {
+    #flexNav {
         flex-direction: row;
-        justify-content: center;
-        gap: 30px;
+        align-items: normal;
     }
 
     .containerGrid {
